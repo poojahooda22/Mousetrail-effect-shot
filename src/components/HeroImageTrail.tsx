@@ -1,10 +1,10 @@
 import { useRef, useEffect } from 'react';
 import { ImageTrail } from '../effects/ImageTrail';
 
-const IMAGE_COUNT = 15;
+const IMAGE_COUNT = 12;
 const images = Array.from(
   { length: IMAGE_COUNT },
-  (_, i) => `/images/trail/${i + 1}.svg`,
+  (_, i) => `/images/trail/${i + 1}.jpg`,
 );
 
 export function HeroImageTrail() {
