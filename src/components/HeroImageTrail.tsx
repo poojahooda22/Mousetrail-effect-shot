@@ -38,7 +38,8 @@ export function HeroImageTrail() {
   return (
     <div
       ref={containerRef}
-      className="relative h-screen overflow-hidden flex items-center justify-center"
+      className="relative h-screen overflow-hidden flex items-center select-none
+       justify-center"
       style={{ isolation: 'isolate' }}
     >
       {images.map((src, i) => (
@@ -51,7 +52,7 @@ export function HeroImageTrail() {
         />
       ))}
 
-      <h2 className="relative z-[10000] w-[59%] text-[4.6rem] leading-[1.1] text-center text-zinc-100 pointer-events-none mix-blend-difference">
+      <h2 className="select-none relative z-[10000] w-[59%] text-[4.6rem] leading-[1.1] text-center text-zinc-100 pointer-events-none mix-blend-difference">
         Next-Gen Websites. Immersive, and Fast. I build digital experiences that
         feel expensive, load instantly, and turn visitors into loyal clients.
       </h2>
